@@ -1,6 +1,18 @@
 #!/bin/bash
 
+#---------------------------------------------------------------------------------
+# Path to berkeley db installation
+#---------------------------------------------------------------------------------
+export BDBPATH=/usr/local/BerkeleyDB.6.2
+
+#---------------------------------------------------------------------------------
+# Add the binaries located in our home to the PATH
+#---------------------------------------------------------------------------------
 export PATH=${PATH}:${HOME}/usr/bin
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${HOME}/usr/lib:/usr/local/BerkeleyDB.6.2/lib
-export CPPFLAGS="-I/usr/local/BerkeleyDB.6.2/include -I${HOME}/usr/include"
-export LDFLAGS="-L/usr/local/BerkeleyDB.6.2/lib -L${HOME}/usr/lib"
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${HOME}/usr/lib:${BDBPATH}/lib
+
+#---------------------------------------------------------------------------------
+# Some build flags in case we need to rebuild
+#---------------------------------------------------------------------------------
+export CPPFLAGS="-I${BDBPATH}/include -I${HOME}/usr/include"
+export LDFLAGS="-L${BDBPATH}/lib -L${HOME}/usr/lib"
