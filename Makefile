@@ -2,22 +2,22 @@
 # Useful targets for running the benchmark
 ##################################################
 all:
-	cd StockTradingLibrary && make clean && make && make install
-	cd ChronosXLibrary && make clean && make && make install
-	cd ChronosXServer && make clean && make && make install
-	#cd ChronosXClient && make clean && make && make install
+	cd ../StockTradingLibrary && make clean && make && make install
+	cd ../ChronosXLibrary && make clean && make && make install
+	cd ../ChronosXServer && make clean && make && make install
+	cd ../ChronosXClient && make clean && make && make install
 
 client:
-	cd ChronosXClient && make && make install
+	cd ../ChronosXClient && make && make install
 
 server:
-	cd ChronosXServer && make && make install
+	cd ../ChronosXServer && make && make install
 
 library:
-	cd ChronosXLibrary && make && make install
+	cd ../ChronosXLibrary && make && make install
 
 stock:
-	cd StockTradingLibrary && make clean && make && make install
+	cd ../StockTradingLibrary && make clean && make && make install
 
 init :
 	-@echo "#---------------------------------------------------#"
