@@ -10,6 +10,8 @@ export BDBPATH=/usr/local/BerkeleyDB.6.2
 #---------------------------------------------------------------------------------
 export PATH=${PATH}:${HOME}/usr/bin
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${HOME}/usr/lib:${BDBPATH}/lib
+echo "PATH=${PATH}"
+echo "LD_LIBRARY_PATH=${LD_LIBRARY_PATH}"
 
 #---------------------------------------------------------------------------------
 # Some build flags in case we need to rebuild

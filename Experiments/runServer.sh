@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ME=$(basename $0)
-ROOTDIR=${HOME}/NetBeansProjects/
+ROOTDIR=${HOME}/Personal/Thesis/Project
 BINDIR=${ROOTDIR}/ChronosXServer
 
 STARTUPSERVER=${BINDIR}/chronosserver
@@ -32,7 +32,10 @@ DELAY_BOUND_MS=500
 
 OUTFILE=/tmp/server.out
 
-make -C ${ROOTDIR} init
+make -C ../ChronosExperiments init
+
+echo "Current dir: ${PWD}"
+. ../setenv.sh
 
 ${STARTUPSERVER} \
   --server-mode ${MODE} \

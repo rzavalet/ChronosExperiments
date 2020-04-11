@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ME=$(basename $0)
-ROOTDIR=${HOME}/NetBeansProjects/
+ROOTDIR=${HOME}/Personal/Thesis/Project
 BINDIR=${ROOTDIR}/ChronosXClient
 
 STARTUPCLIENT=${BINDIR}/chronosclient
@@ -19,6 +19,8 @@ PORT=5000
 PCT_VIEW_XACTS=100
 
 OUTFILE=/tmp/client.out
+
+. ../setenv.sh
 
 ${STARTUPCLIENT} --clients ${NUM_THREADS} --address ${SERVER} --port ${PORT} --view-transactions ${PCT_VIEW_XACTS} > ${OUTFILE} 2>&1 
 
