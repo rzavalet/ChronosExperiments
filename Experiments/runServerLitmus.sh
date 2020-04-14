@@ -14,20 +14,15 @@ if [ ! -x ${STARTUPSERVER} ]; then
   exit 255
 fi
 
-if [ $# -ne 2 ]; then
+if [ $# -ne 1 ]; then
   echo "Usage:"
-  echo "  ${ME} <num_threads> <mode>"
+  echo "  ${ME} <num_threads>"
   echo ""
-  echo "Valid modes are:"
-  echo "  base"
-  echo "  ac"
-  echo "  aup"
-  echo "  ac_aup"
   exit 255
 fi
 
 NUM_THREADS=$1
-MODE=$2
+MODE="base"
 SERVER="127.0.0.1"
 PORT=5000
 NUM_UPDATE_THREADS=100
@@ -37,7 +32,7 @@ NUM_SERVER_THREADS=1
 #DURATION_SEC=300
 DURATION_SEC=1200
 XACT_SIZE=50
-DELAY_BOUND_MS=100
+DELAY_BOUND_MS=400
 
 OUTFILE=/tmp/server.out
 
@@ -45,6 +40,18 @@ make -C .. init
 
 echo "Current dir: ${PWD}"
 . ../setenv.sh
+
+setsched Linux
+setsched P-RES
+if [ $? -ne 0 ]; then
+  echo "Failed to set scheduler plugin"
+  exit 255
+fi
+
+. ./create_res_table.sh
+
+echo "Sleeping for 5 seconds before starting server..."
+sleep 5;
 
 echo "Server will run for ${DURATION_SEC} seconds..."
 ${STARTUPSERVER} \
@@ -57,7 +64,7 @@ ${STARTUPSERVER} \
   --xact-size ${XACT_SIZE} \
   --delay-bound ${DELAY_BOUND_MS} \
   --initial-load \
-  > ${OUTFILE} 2>&1 
+  > ${OUTFILE} 2>&1 &
 
 #gdb --args \
 #${STARTUPSERVER} \
@@ -71,9 +78,25 @@ ${STARTUPSERVER} \
 #  --delay-bound ${DELAY_BOUND_MS} \
 #  --initial-load
 
+echo "Sleeping for 30 seconds before signaling first update thread..."
+sleep 30
+
+release_ts
 if [ $? -ne 0 ]; then
-  echo "Some error ocurred while running the test. rc: $?"
+  echo "Failed to release tasks"
   exit 255
 fi
+
+echo "Sleeping for 60 seconds before signaling other threads..."
+sleep 60
+
+release_ts
+if [ $? -ne 0 ]; then
+  echo "Failed to release tasks"
+  exit 255
+fi
+
+echo "Waiting for server to finish..."
+wait
 
 echo "Done."

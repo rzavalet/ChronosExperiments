@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ME=$(basename $0)
-ROOTDIR=${HOME}/Personal/Thesis/Project
+ROOTDIR=${HOME}/Project
 BINDIR=${ROOTDIR}/ChronosXClient
 
 STARTUPCLIENT=${BINDIR}/chronosclient
@@ -23,6 +23,7 @@ OUTFILE=/tmp/client.out
 . ../setenv.sh
 
 ${STARTUPCLIENT} --clients ${NUM_THREADS} --address ${SERVER} --port ${PORT} --view-transactions ${PCT_VIEW_XACTS} > ${OUTFILE} 2>&1 
+#gdb --args ${STARTUPCLIENT} --clients ${NUM_THREADS} --address ${SERVER} --port ${PORT} --view-transactions ${PCT_VIEW_XACTS}
 
 if [ $? -ne 0 ]; then
   echo "Some error ocurred while running the test. rc: $?"

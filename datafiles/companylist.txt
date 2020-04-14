@@ -410,7 +410,7 @@ BLVDW#Boulevard Acquisition Corp. II#0.4251#n/a#2015#Finance#Business Services#h
 BCLI#Brainstorm Cell Therapeutics Inc.#2.4#$44.77M#n/a#Health Care#Biotechnology: Biological Products (No Diagnostic Substances)#http://www.nasdaq.com/symbol/bcli#
 BBRG#Bravo Brio Restaurant Group# Inc.#8.12#$119.33M#2010#Consumer Services#Restaurants#http://www.nasdaq.com/symbol/bbrg#
 BDGE#Bridge Bancorp# Inc.#29.95#$522.89M#n/a#Finance#Major Banks#http://www.nasdaq.com/symbol/bdge#
-BLIN          #Bridgeline Digital# Inc.#0.885#$4.81M#n/a#Technology#Computer Software: Prepackaged Software#http://www.nasdaq.com/symbol/blin#
+BLIN#Bridgeline Digital# Inc.#0.885#$4.81M#n/a#Technology#Computer Software: Prepackaged Software#http://www.nasdaq.com/symbol/blin#
 BRID#Bridgford Foods Corporation#13.8#$125.26M#n/a#Consumer Non-Durables#Specialty Foods#http://www.nasdaq.com/symbol/brid#
 BCOV#Brightcove Inc.#9.57#$313.59M#2012#Technology#EDP Services#http://www.nasdaq.com/symbol/bcov#
 AVGO#Broadcom Limited#159.67#$63.15B#2009#Technology#Semiconductors#http://www.nasdaq.com/symbol/avgo#
@@ -923,7 +923,7 @@ ETRM#EnteroMedics Inc.#0.22#$2.04M#2007#Health Care#Biotechnology: Electromedica
 EBTC#Enterprise Bancorp Inc#23.8#$249.3M#n/a#Finance#Major Banks#http://www.nasdaq.com/symbol/ebtc#
 EFSC#Enterprise Financial Services Corporation#27.55#$551.59M#n/a#Finance#Major Banks#http://www.nasdaq.com/symbol/efsc#
 EGT#Entertainment Gaming Asia Incorporated#1.9#$27.48M#n/a#Consumer Durables#Miscellaneous manufacturing industries#http://www.nasdaq.com/symbol/egt#
-ENZY          #Enzymotec Ltd.#8.91#$202.42M#2013#Consumer Durables#Specialty Chemicals#http://www.nasdaq.com/symbol/enzy#
+ENZY#Enzymotec Ltd.#8.91#$202.42M#2013#Consumer Durables#Specialty Chemicals#http://www.nasdaq.com/symbol/enzy#
 EPIQ#EPIQ Systems# Inc.#14.78#$560.47M#1997#Technology#EDP Services#http://www.nasdaq.com/symbol/epiq#
 EPRS#EPIRUS Biopharmaceuticals# Inc.#0.245#$6.42M#n/a#Health Care#Major Pharmaceuticals#http://www.nasdaq.com/symbol/eprs#
 EPZM#Epizyme# Inc.#10.04#$574.52M#2013#Health Care#Major Pharmaceuticals#http://www.nasdaq.com/symbol/epzm#
@@ -931,7 +931,7 @@ PLUS#ePlus inc.#81.87#$587.6M#1996#Technology#Retail: Computer Software & Periph
 EQIX#Equinix# Inc.#376.86#$26.16B#2000#Consumer Services#Real Estate Investment Trusts#http://www.nasdaq.com/symbol/eqix#
 EQFN#Equitable Financial Corp.#8.53#$29.66M#2015#Finance#Savings Institutions#http://www.nasdaq.com/symbol/eqfn#
 EQBK#Equity Bancshares# Inc.#22.62#$185.86M#2015#Finance#Major Banks#http://www.nasdaq.com/symbol/eqbk#
-EAC           #Erickson Incorporated#0.68#$9.45M#2012#Capital Goods#Aerospace#http://www.nasdaq.com/symbol/eac#
+EAC#Erickson Incorporated#0.68#$9.45M#2012#Capital Goods#Aerospace#http://www.nasdaq.com/symbol/eac#
 ERIC#Ericsson#7.36#$23.99B#n/a#Technology#Radio And Television Broadcasting And Communications Equipment#http://www.nasdaq.com/symbol/eric#
 ERIE#Erie Indemnity Company#97.69#$4.51B#n/a#Finance#Specialty Insurers#http://www.nasdaq.com/symbol/erie#
 ESCA#Escalade# Incorporated#10.58#$150.83M#n/a#Consumer Non-Durables#Recreational Products/Toys#http://www.nasdaq.com/symbol/esca#
@@ -1428,7 +1428,7 @@ ISNS#Image Sensing Systems# Inc.#2.38#$11.99M#1995#Capital Goods#Industrial Mach
 IMMR#Immersion Corporation#7.66#$220.77M#1999#Technology#Computer peripheral equipment#http://www.nasdaq.com/symbol/immr#
 ICCC#ImmuCell Corporation#6.8005#$28.42M#1987#Health Care#Biotechnology: In Vitro & In Vivo Diagnostic Substances#http://www.nasdaq.com/symbol/iccc#
 IMDZ#Immune Design Corp.#7.16#$144.3M#2014#Health Care#Major Pharmaceuticals#http://www.nasdaq.com/symbol/imdz#
-IMNP          #Immune Pharmaceuticals Inc.#0.3401#$13.93M#n/a#Health Care#Major Pharmaceuticals#http://www.nasdaq.com/symbol/imnp#
+IMNP#Immune Pharmaceuticals Inc.#0.3401#$13.93M#n/a#Health Care#Major Pharmaceuticals#http://www.nasdaq.com/symbol/imnp#
 IMGN#ImmunoGen# Inc.#2.85#$248.17M#1989#Health Care#Major Pharmaceuticals#http://www.nasdaq.com/symbol/imgn#
 IMMU#Immunomedics# Inc.#2.68#$254.07M#n/a#Health Care#Biotechnology: In Vitro & In Vivo Diagnostic Substances#http://www.nasdaq.com/symbol/immu#
 IPXL#Impax Laboratories# Inc.#30.44#$2.25B#n/a#Health Care#Major Pharmaceuticals#http://www.nasdaq.com/symbol/ipxl#
@@ -2806,7 +2806,7 @@ TKAI#Tokai Pharmaceuticals# Inc.#5.29#$119.74M#2014#Health Care#Major Pharmaceut
 TNXP#Tonix Pharmaceuticals Holding Corp.#2#$37.78M#n/a#Health Care#Major Pharmaceuticals#http://www.nasdaq.com/symbol/tnxp#
 TISA#Top Image Systems# Ltd.#1.98#$35.48M#1996#Technology#Computer peripheral equipment#http://www.nasdaq.com/symbol/tisa#
 TOPS#TOP Ships Inc.#4.04#$8.4M#n/a#Transportation#Marine Transportation#http://www.nasdaq.com/symbol/tops#
-TORM          #TOR Minerals International Inc#4.79#$17.23M#1988#Basic Industries#Major Chemicals#http://www.nasdaq.com/symbol/torm#
+TORM#TOR Minerals International Inc#4.79#$17.23M#1988#Basic Industries#Major Chemicals#http://www.nasdaq.com/symbol/torm#
 TRCH#Torchlight Energy Resources# Inc.#1.17#$42.31M#n/a#Energy#Oil & Gas Production#http://www.nasdaq.com/symbol/trch#
 TSEM#Tower Semiconductor Ltd.#12.92#$1.11B#1994#Technology#Semiconductors#http://www.nasdaq.com/symbol/tsem#
 TWER#Towerstream Corporation#2.7#$452244.6#n/a#Consumer Services#Telecommunications Equipment#http://www.nasdaq.com/symbol/twer#
