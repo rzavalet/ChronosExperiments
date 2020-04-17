@@ -2,8 +2,8 @@
 
 ME=$(basename $0)
 
-USERHOME=/home/ricardo
-#USERHOME=${HOME}
+#USERHOME=/home/ricardo
+USERHOME=${HOME}
 
 ROOTDIR=${USERHOME}/Project
 BINDIR=${ROOTDIR}/ChronosXServer
@@ -33,11 +33,12 @@ PORT=5000
 NUM_UPDATE_THREADS=100
 NUM_SERVER_THREADS=1
 #NUM_SERVER_THREADS=10
+#DURATION_SEC=900
 #DURATION_SEC=600
-#DURATION_SEC=300
 DURATION_SEC=1200
 XACT_SIZE=50
-DELAY_BOUND_MS=100
+DELAY_BOUND_MS=40
+VALIDITY_INTERVAL=2000
 
 OUTFILE=/tmp/server.out
 
@@ -56,6 +57,7 @@ ${STARTUPSERVER} \
   --port ${PORT} \
   --xact-size ${XACT_SIZE} \
   --delay-bound ${DELAY_BOUND_MS} \
+  --validity-interval ${VALIDITY_INTERVAL} \
   --initial-load \
   > ${OUTFILE} 2>&1 
 
